@@ -16,18 +16,18 @@ myArray::myArray()
     arr = new int[capacity];
 }
 
-// void myArray::insertOne(int num)
-// {
-//     if (capacity > size)
-//     {
-//         arr[size] = num;
-//         size++;
+void myArray::insertOne(int num)
+{
+    if (capacity > size)
+    {
+        arr[size] = num;
+        size++;
 
-//         cout << "\nThe new variable is inserted successfully.";
-//     }
-//     else
-//         cout << "\nInsertion of variable fails. The size limit is reached.";
-// }
+        cout << "\nThe new variable is inserted successfully.";
+    }
+    else
+        cout << "\nInsertion of variable fails. The size limit is reached.";
+}
 
 void myArray::insertMany(int array[], int s)
 {
